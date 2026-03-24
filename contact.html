@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — HealthPoint Pharmacy & Wellness</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+<script src="components.js"></script>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=1600&q=80')">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="page-breadcrumb"><a href="index.html">Home</a> / Contact</p>
+      <h1>Get in Touch</h1>
+      <p>We're here to help. Reach out with questions, transfers, or just to say hello.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT DETAILS + FORM -->
+  <section class="section contact">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <p class="section-eyebrow">Contact Information</p>
+        <h2>We'd Love to Hear From You</h2>
+        <p>Whether you want to transfer a prescription, ask about a medication, inquire about membership, or just have a health question — our team is ready to help.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Address</strong>
+              <span>123 Wellness Ave, New York, NY 10001</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <span><a href="tel:5165051550">(516) 505-1550</a></span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-fax"></i></div>
+            <div>
+              <strong>Fax (for providers)</strong>
+              <span>(516) 505-1551</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <span><a href="mailto:info@healthpointrx.com">info@healthpointrx.com</a></span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Hours</strong>
+              <span>Mon–Fri: 9am–7pm<br />Saturday: 10am–5pm<br />Sunday: Closed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2!2d-74.006!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjEiTiA3NMKwMDAnMjEuNiJX!5e0!3m2!1sen!2sus!4v1000000000000"
+            width="100%"
+            height="240"
+            style="border:0;border-radius:12px;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm">
+          <h3>Send Us a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="(555) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label>Subject *</label>
+            <select required>
+              <option value="" disabled selected>Select a topic</option>
+              <option>Prescription Transfer</option>
+              <option>Prescription Refill</option>
+              <option>General Inquiry</option>
+              <option>Membership Sign-up</option>
+              <option>Consultation Request</option>
+              <option>Insurance / Billing</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea rows="5" placeholder="How can we help you today?" required></textarea>
+          </div>
+          <div class="form-group form-check">
+            <label class="checkbox-label">
+              <input type="checkbox" required />
+              <span>I consent to being contacted by HealthPoint Pharmacy about my inquiry.</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-note"><i class="fas fa-lock"></i> Your information is always kept private and HIPAA-compliant.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK ACTIONS -->
+  <section class="section" style="background:var(--gray-light); padding: 64px 0;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:40px">
+        <p class="section-eyebrow">Quick Actions</p>
+        <h2>Need Something Specific?</h2>
+      </div>
+      <div class="quick-actions">
+        <a href="rx-forms.html#transfer" class="quick-action-card">
+          <div class="qa-icon"><i class="fas fa-exchange-alt"></i></div>
+          <h3>Transfer a Prescription</h3>
+          <p>Moving from another pharmacy? We make it easy.</p>
+          <span class="card-link">Start transfer <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="rx-forms.html#refill" class="quick-action-card">
+          <div class="qa-icon"><i class="fas fa-sync-alt"></i></div>
+          <h3>Request a Refill</h3>
+          <p>Submit a refill request online and we'll have it ready.</p>
+          <span class="card-link">Request refill <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="rx-forms.html#new-patient" class="quick-action-card">
+          <div class="qa-icon"><i class="fas fa-user-plus"></i></div>
+          <h3>New Patient Forms</h3>
+          <p>First time here? Complete intake forms in advance.</p>
+          <span class="card-link">Fill out forms <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="membership.html" class="quick-action-card">
+          <div class="qa-icon"><i class="fas fa-star"></i></div>
+          <h3>Join Membership</h3>
+          <p>Save more and get closer access to our pharmacists.</p>
+          <span class="card-link">View plans <i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
